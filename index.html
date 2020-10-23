@@ -7,51 +7,51 @@
     <link rel="stylesheet" href=".\style.css">
 </head>
 <body>
-    <head>
-    <body>
-        
-    </body>
     <div class="container">
 
-    <div class = "row">
-        <h1>Penalty Shootout</h1>
-        <div class="col"> 
-        <img src="./photos/Barcelona_logo.png" width="70px"></img>
-        </div>
-        <br>
-        <span>Barcelona</span>
-        <div><span>0</span>
-        <span>1</span>
-        <span>0</span>
-        <span>1</span>
-        <span>1</span>
-        </div>
+        <div class = "row">
 
+         <div class="col"> 
+                <img class="profile-icon" src="./photos/Barcelona_logo.png" height="100px" width=100>
+                  <span class="name" id="team-1-name"></span>
+                <div class="row penalty shootout score" id="team-1-goals">
+                   <span class="col">-</span>
+                   <span class="col">-</span>
+                   <span class="col">-</span>
+                   <span class="col">-</span>
+                   <span class="col">-</span>
+               </div>
+           </div>
         
-        <div class="col"><div>
-            <span>3</span>
-            <span>-</span>
-            <span>3</span>
-        </div></div>
+         <div class="col">
+              <div class="row score">
+                 <span id="team-1-score"></span>
+                 <span>-</span>
+                 <span id="team-2-score"></span>
+              </div>
+           </div>
 
-        <div class ="col">
-            <img src="./photos/Real Madrid logo.jpg" width="110px"></img>
-        </div>
-        <br>
-        <span>Real Madrid</span>
-        <div><span>1</span>
-        <span>1</span>
-        <span>0</span>
-        <span>1</span>
-        <span>1</span>
-        </div>
-        </div>
+          <div class ="col">
+                <img class="profile-icon" src="./photos/Real Madrid logo.jpg" height="100px" width="110px">
+                <span class="name" id="team-2-name">Real Madrid</span>
+               <div class="row penalty shootout score" id="team-2-goals">
+                 <span class="col">-</span>
+                 <span class="col">-</span>
+                 <span class="col">-</span>
+                 <span class="col">-</span>
+                 <span class="col">-</span>
+                </div>
+           </div>
         
-        
-    
-    
-    <section></section>
-    <footer></footer>
-    
+           </div>
+              <div class="row">
+                  <button id="strike-button"></button>
+               </div>
+           </div>
+        </div>
+   </div>
+
+    <script src="./app.js"></script> 
 </body>
+</head>
 </html>
