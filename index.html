@@ -7,34 +7,46 @@
     <link rel="stylesheet" href=".\style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container" >
 
-        <div class = "row">
+                           
 
-         <div class="col"> 
-                <img class="profile-icon" src="./photos/Barcelona_logo.png" height="100px" width=100>
-                  <span class="name" id="team-1-name"></span>
-                <div class="row penalty shootout score" id="team-1-goals">
-                   <span class="col">-</span>
-                   <span class="col">-</span>
-                   <span class="col">-</span>
-                   <span class="col">-</span>
-                   <span class="col">-</span>
-               </div>
-           </div>
-        
-         <div class="col">
+      
+       <div class="row" id="finalMatch" style="display:none"> 
+         
+
+           <div class="col" style="display:inline-block"> 
+                  <img class="profile-icon" id="team-A-img" src="" height="100px" width=100>
+                   <span class="name" id="team-A-name" ></span>
+                  <div class="row penalty shootout score" id="team-A-goals">
+                      <span class="col">-</span>
+                      <span class="col">-</span>
+                      <span class="col">-</span>
+                      <span class="col">-</span>
+                      <span class="col">-</span>
+                   </div>
+             </div>
+            <div class="col" style="display:inline-flex">
               <div class="row score">
-                 <span id="team-1-score"></span>
+                 <span id="team-A-score"></span>
                  <span>-</span>
-                 <span id="team-2-score"></span>
-              </div>
-           </div>
+                 <span id="team-B-score"></span>
 
-          <div class ="col">
-                <img class="profile-icon" src="./photos/Real Madrid logo.jpg" height="100px" width="110px">
-                <span class="name" id="team-2-name">Real Madrid</span>
-               <div class="row penalty shootout score" id="team-2-goals">
+               </div>
+                       <div class="row">
+                        <button onclick="handleStrikeButtonClick()" id="strike-button"></button>
+                           </div>
+                             <div class="row">
+                             <h1 class="row" id="result" hidden></h1>
+
+                           </div>
+                </div>
+
+                
+          <div class ="col" style="display:inline-block"> 
+                <img class="profile-icon" id="team-B-img" src="" height="100px" width="110px">
+                <span class="name" class="name" id="team-B-name"></span>
+               <div class="row penalty shootout score" id="team-B-goals">
                  <span class="col">-</span>
                  <span class="col">-</span>
                  <span class="col">-</span>
@@ -44,14 +56,134 @@
            </div>
         
            </div>
-              <div class="row">
-                  <button id="strike-button"></button>
-               </div>
-           </div>
-        </div>
-   </div>
+             
+            
+ 
+          </br></br></br> </br>
+   
+          <div class = "row"> 
 
-    <script src="./app.js"></script> 
+              <div class="col"> 
+                     <img class="profile-icon" src="./photos/Barcelona.png" height="100px" width=100>
+                       <span class="name" id="team-1-name"></span>
+                     <div class="row penalty shootout score" id="team-1-goals">
+                        <span class="col">-</span>
+                        <span class="col">-</span>
+                        <span class="col">-</span>
+                        <span class="col">-</span>
+                        <span class="col">-</span>
+                    </div>
+                </div>
+
+                <div class="col">
+                  <head>Semi-Final 1</head>
+                  <div class="row score">
+                     <span id="team-1-score"></span>
+                     <span>-</span>
+                     <span id="team-2-score"></span>
+    
+                   </div>
+                           <div class="row">
+                            <button onclick="handleStrikeButtonClick1()" id="strike-button1"></button>
+                               </div>
+                                 <div class="row">
+                                 <h1 class="row" id="result1" hidden></h1>
+    
+                               </div>
+                         </div>
+                   <div class ="col">
+                     <img class="profile-icon" src="./photos/RealMadrid.jpg" height="100px" width="110px">
+                     <span class="name" id="team-2-name"></span>
+                    <div class="row penalty shootout score" id="team-2-goals">
+                      <span class="col">-</span>
+                      <span class="col">-</span>
+                      <span class="col">-</span>
+                      <span class="col">-</span>
+                      <span class="col">-</span>
+                     </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+             
+                <div class="col"> 
+                  <img class="profile-icon" src="./photos/Arsenal.png" height="100px" width=100>
+                    <span class="name" id="team-3-name"></span>
+                  <div class="row penalty shootout score" id="team-3-goals">
+                     <span class="col">-</span>
+                     <span class="col">-</span>
+                     <span class="col">-</span>
+                     <span class="col">-</span>
+                     <span class="col">-</span>
+                 </div>
+             </div>
+
+
+             <div class="col">
+               <head>Semi-Final 2</head>
+              <div class="row score">
+                 <span id="team-3-score"></span>
+                 <span>-</span>
+                 <span id="team-4-score"></span>
+
+                
+             </div>
+             <div class="row">
+              <button onclick="handleStrikeButtonClick2()" id="strike-button2"></button>
+           </div>
+           <div class="row">
+            <h1 class="row" id="result2" hidden></h1>
+
+          </div>
+
+
+
+              </div>
+
+          
+          
+            <div class ="col">
+                  <img class="profile-icon" src="./photos/Juventus.jpeg" height="100px" width="110px">
+                  <span class="name" id="team-4-name"></span>
+                 <div class="row penalty shootout score" id="team-4-goals">
+                   <span class="col">-</span>
+                   <span class="col">-</span>
+                   <span class="col">-</span>
+                   <span class="col">-</span>
+                   <span class="col">-</span>
+                  </div>
+             </div>
+          
+             </div>
+
+           </div>
+
+
+
+
+
+
+
+
+
+
+
+   
+   <script src="app2.js"></script>
+
+
 </body>
+
+
+
 </head>
 </html>

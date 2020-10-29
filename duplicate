@@ -1,0 +1,150 @@
+<body>
+    <div class="container" >
+
+        <div class = "row"> 
+
+         <div class="col"> 
+                <img class="profile-icon" src="./photos/Barcelona_logo.png" height="100px" width=100>
+                  <span class="name" id="team-1-name"></span>
+                <div class="row penalty shootout score" id="team-1-goals">
+                   <span class="col">-</span>
+                   <span class="col">-</span>
+                   <span class="col">-</span>
+                   <span class="col">-</span>
+                   <span class="col">-</span>
+               </div>
+           </div>
+        
+              <div class="row score">
+                 <span id="team-1-score"></span>
+                 <span>-</span>
+                 <span id="team-2-score"></span>
+              </div>
+
+          <div class ="col">
+                <img class="profile-icon" src="./photos/Real Madrid logo.jpg" height="100px" width="110px">
+                <span class="name" id="team-2-name">Real Madrid</span>
+               <div class="row penalty shootout score" id="team-2-goals">
+                 <span class="col">-</span>
+                 <span class="col">-</span>
+                 <span class="col">-</span>
+                 <span class="col">-</span>
+                 <span class="col">-</span>
+                </div>
+           </div>
+        
+           </div>
+              <div class="row">
+                  <button onclick="handleStrikeButtonClick()" id="strike-button"></button>
+               </div>
+               <div class="row">
+                <h1 class="row" id="result" hidden></h1>
+             </div>
+           </div>
+
+
+
+
+
+
+
+
+
+
+
+   
+
+   <script src="./app.js"></script> 
+
+
+</body>
+
+
+
+</head>
+</html>
+
+
+
+
+
+
+
+
+
+elements.style{
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #9013fe;
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+}
+.container{
+    background: white;
+    display:flex;
+    flex-direction:column;
+    border-radius:20px;
+    width: 700px;
+    padding: 50px;
+    margin-top: 50px;
+
+}
+.container > .row{
+    width: 100%;
+    justify-content: space-evenly;
+}
+.row{
+    display: flex;
+}
+.col{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.name{
+    margin: 20px 0;
+    font-size: x-large;
+    font-weight: bold;
+}
+.profile-icon{
+    border-radius: 50;
+    border: 2px solid bisque;
+}
+.score{
+    font-size: x-large;
+}
+
+.score  > span{
+    margin: 0 5px;
+
+}
+ .penalty shootout score{
+     font-size: xx-large;
+     width: 200;
+     justify-content: space-evenly;
+ }
+
+ #strike-button{
+     border: none;
+     text-align: center;
+     border-radius: 25px;
+     background:linear-gradient(135deg, #c02425,#f0cb35);
+     font-size: large;
+     width: 300px;
+     color: white;
+     padding: 10px;
+     margin-top: 50px;
+     margin-bottom: -50px;
+     outline: none;
+     justify-content: end;
+ }
